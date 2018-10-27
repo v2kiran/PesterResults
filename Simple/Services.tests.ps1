@@ -2,7 +2,7 @@
 
 Import-Module -Name poshspec -Verbose:$false -ErrorAction Stop
 
-describe 'Operating System' {
+describe 'Operating System' -Tag 'Services' {
     context 'Availability' {
         service DHCP status { should be running }
         service DNSCache status { should be running }

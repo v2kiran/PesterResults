@@ -12,5 +12,5 @@ Invoke-Pester  -OutputFormat NUnitXml -OutputFile output.xml
 
 ```powershell
 $runit = "C:\Users\kiran\OneDrive\Apps\pester\ReportUnit.exe"
-$runit .\output.xml
+&$runit .\output.xml
 ```
