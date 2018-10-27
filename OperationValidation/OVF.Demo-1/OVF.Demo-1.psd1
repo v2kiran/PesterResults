@@ -9,7 +9,7 @@
     ModuleVersion     = '1.0.0'
 
     # ID used to uniquely identify this module
-    GUID              = '25bd9e34-bff9-4552-a23d-854857b42462'
+    GUID              = '39d3ff56-62a2-48a0-b6c1-a0bb517dd92f'
 
     # Author of this module
     Author            = 'Kiran Reddy'

@@ -4,6 +4,9 @@ function Invoke-OVFDemo1
     param 
     (
         [String] 
+        $LogName = 'Application',
+
+        [String] 
         $EventSource = 'OVFDemo1',
 
         [Int] 
@@ -23,13 +26,13 @@ function Invoke-OVFDemo1
         # Add the Event Source if it doesn't exist
         if (-not [system.diagnostics.eventlog]::SourceExists($EventSource))
         {
-            [system.diagnostics.EventLog]::CreateEventSource($EventSource, 'Application')
+            [system.diagnostics.EventLog]::CreateEventSource($EventSource, $LogName)
         } 
     }
 
 
     # Execute the tests
-    $modulename = [io.path]::GetFileNameWithoutExtension($MyInvocation.MyCommand.Name)
+    $modulename = Split-Path -Path $PSScriptRoot -Leaf
     $Results = Invoke-OperationValidation -ModuleName $modulename -TestType $TestType 
     $FailedTests = $Results | Where-Object Result -EQ 'Failed'
 
@@ -42,7 +45,7 @@ function Invoke-OVFDemo1
                 Source    = $EventSource
                 EntryType = 'Error'
                 Category  = 0
-                LogName   = 'Application'
+                LogName   = $LogName
                 Message   = $FailedTest.Name
                 EventId   = $EventId
             }
