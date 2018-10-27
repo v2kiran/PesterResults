@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="22" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2018-10-27" time="15:22:41">
+  <environment user="kiran" machine-name="ARCHIE-BRIX" cwd="C:\Users\kiran\OneDrive\GitHub\PesterResults" user-domain="ARCHIE-BRIX" platform="Microsoft Windows 10 Pro|C:\Windows|\Device\Harddisk0\Partition4" nunit-version="2.5.8.0" os-version="10.0.17134" clr-version="4.0.30319.42000" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Failure" success="False" time="7.5545" asserts="0" description="Pester">
+    <results>
+      <test-suite type="TestFixture" name="C:\Users\kiran\OneDrive\GitHub\PesterResults\Simple\LogicalDisk.tests.ps1" executed="True" result="Success" success="True" time="3.424" asserts="0" description="C:\Users\kiran\OneDrive\GitHub\PesterResults\Simple\LogicalDisk.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Logical Disks" executed="True" result="Success" success="True" time="3.424" asserts="0" description="Logical Disks">
+            <results>
+              <test-suite type="TestFixture" name="Availablity" executed="True" result="Success" success="True" time="3.2542" asserts="0" description="Availablity">
+                <results>
+                  <test-case description="Volume [C] is healthy" name="Logical Disks.Availablity.Volume [C] is healthy" time="3.1469" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Volume [] is healthy" name="Logical Disks.Availablity.Volume [] is healthy" time="0.0798" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Volume [] is healthy" name="Logical Disks.Availablity.Volume [] is healthy" time="0.0162" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Volume [] is healthy" name="Logical Disks.Availablity.Volume [] is healthy" time="0.0114" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Capacity" executed="True" result="Success" success="True" time="0.1698" asserts="0" description="Capacity">
+                <results>
+                  <test-case description="System drive [C] has 500 MB and 5% free" name="Logical Disks.Capacity.System drive [C] has 500 MB and 5% free" time="0.1127" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Non-System drive [] has greater than 1000 MB and 5% free" name="Logical Disks.Capacity.Non-System drive [] has greater than 1000 MB and 5% free" time="0.023" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Non-System drive [] has greater than 1000 MB and 5% free" name="Logical Disks.Capacity.Non-System drive [] has greater than 1000 MB and 5% free" time="0.0171" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Non-System drive [] has greater than 1000 MB and 5% free" name="Logical Disks.Capacity.Non-System drive [] has greater than 1000 MB and 5% free" time="0.0171" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="C:\Users\kiran\OneDrive\GitHub\PesterResults\Simple\Memory.tests.ps1" executed="True" result="Success" success="True" time="1.6082" asserts="0" description="C:\Users\kiran\OneDrive\GitHub\PesterResults\Simple\Memory.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Memory" executed="True" result="Success" success="True" time="1.6082" asserts="0" description="Memory">
+            <results>
+              <test-suite type="TestFixture" name="Capacity" executed="True" result="Success" success="True" time="1.6082" asserts="0" description="Capacity">
+                <results>
+                  <test-case description="MB Free should be greater than 500" name="Memory.Capacity.MB Free should be greater than 500" time="0.2374" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Free System Page Table Entries is greather than 5000" name="Memory.Capacity.Free System Page Table Entries is greather than 5000" time="1.3708" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="C:\Users\kiran\OneDrive\GitHub\PesterResults\Simple\Network.tests.ps1" executed="True" result="Failure" success="False" time="1.9592" asserts="0" description="C:\Users\kiran\OneDrive\GitHub\PesterResults\Simple\Network.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Network Adapters" executed="True" result="Failure" success="False" time="1.9592" asserts="0" description="Network Adapters">
+            <results>
+              <test-suite type="TestFixture" name="Availability" executed="True" result="Failure" success="False" time="1.9592" asserts="0" description="Availability">
+                <results>
+                  <test-case description="Interface property 'Status' for 'Ethernet' should be up" name="Network Adapters.Availability.Interface property 'Status' for 'Ethernet' should be up" time="1.8054" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Interface property 'Status' for 'Wi-Fi' should be up" name="Network Adapters.Availability.Interface property 'Status' for 'Wi-Fi' should be up" time="0.1539" asserts="0" success="False" result="Failure" executed="True">
+                    <failure>
+                      <message>Expected strings to be the same, but they were different.
+Expected length: 2
+Actual length:   12
+Strings differ at index 0.
+Expected: 'up'
+But was:  'Disconnected'
+-----------^</message>
+                      <stack-trace>at &lt;ScriptBlock&gt;, : line 1
+1: Get-NetAdapter -Name 'Wi-Fi' -ErrorAction SilentlyContinue | Select-Object -ExpandProperty 'Status' | should be up</stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="C:\Users\kiran\OneDrive\GitHub\PesterResults\Simple\Services.tests.ps1" executed="True" result="Success" success="True" time="0.5631" asserts="0" description="C:\Users\kiran\OneDrive\GitHub\PesterResults\Simple\Services.tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Operating System" executed="True" result="Success" success="True" time="0.5631" asserts="0" description="Operating System">
+            <results>
+              <test-suite type="TestFixture" name="Availability" executed="True" result="Success" success="True" time="0.5631" asserts="0" description="Availability">
+                <results>
+                  <test-case description="Service property 'status' for 'DHCP' should be running" name="Operating System.Availability.Service property 'status' for 'DHCP' should be running" time="0.2572" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Service property 'status' for 'DNSCache' should be running" name="Operating System.Availability.Service property 'status' for 'DNSCache' should be running" time="0.0262" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Service property 'status' for 'Eventlog' should be running" name="Operating System.Availability.Service property 'status' for 'Eventlog' should be running" time="0.0293" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Service property 'status' for 'PlugPlay' should be running" name="Operating System.Availability.Service property 'status' for 'PlugPlay' should be running" time="0.0277" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Service property 'status' for 'RpcSs' should be running" name="Operating System.Availability.Service property 'status' for 'RpcSs' should be running" time="0.0329" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Service property 'status' for 'lanmanserver' should be running" name="Operating System.Availability.Service property 'status' for 'lanmanserver' should be running" time="0.0458" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Service property 'status' for 'LmHosts' should be running" name="Operating System.Availability.Service property 'status' for 'LmHosts' should be running" time="0.0352" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Service property 'status' for 'Lanmanworkstation' should be running" name="Operating System.Availability.Service property 'status' for 'Lanmanworkstation' should be running" time="0.0453" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Service property 'status' for 'MpsSvc' should be running" name="Operating System.Availability.Service property 'status' for 'MpsSvc' should be running" time="0.0307" asserts="0" success="True" result="Success" executed="True" />
+                  <test-case description="Service property 'status' for 'WinRM' should be running" name="Operating System.Availability.Service property 'status' for 'WinRM' should be running" time="0.0328" asserts="0" success="True" result="Success" executed="True" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
