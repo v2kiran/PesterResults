@@ -23,6 +23,10 @@ function Invoke-OVFDemo1
 
     if ($writeEventLog)
     {
+        if ((Get-EventLog -List -AsString ) -notcontains $LogName)
+        {
+            New-EventLog -LogName $LogName -Source $EventSource 
+        }
         # Add the Event Source if it doesn't exist
         if (-not [system.diagnostics.eventlog]::SourceExists($EventSource))
         {
